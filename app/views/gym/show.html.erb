@@ -1,0 +1,9 @@
+<h1><%= @gym.name %></h1>
+
+<h3> ORM = <%= @gym.ORM %></h3>
+<h3> TRM = <%= @gym.ORM * 0.9 %> </h3>
+
+<ul>
+  <li><%= link_to "Edit", edit_gym_path(@gym) %></li>
+  <a href="/gym"> home </a>
+</ul>

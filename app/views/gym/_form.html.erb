@@ -1,0 +1,13 @@
+<%= form_with model: gym do |form| %>
+  <div>
+    <%= form.label :ORM %><br>
+    <%= form.text_area :ORM %><br>
+    <% gym.errors.full_messages_for(:ORM).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
