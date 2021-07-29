@@ -1,13 +1,20 @@
 <%= form_with model: gym do |form| %>
+<div class = "row">
+  <div class = "col-md-3"></div>
+  <div class = "col-md-3">
   <div>
     <%= form.label :ORM %><br>
     <%= form.text_area :ORM %><br>
     <% gym.errors.full_messages_for(:ORM).each do |message| %>
       <div><%= message %></div>
+    
     <% end %>
-  </div>
+        </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+        <div>
+         <%= form.submit %>
+        </div>
+      <% end %>
+    </div>
+    <div class = "col-md-6"></div>
+</div>
